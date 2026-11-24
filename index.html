@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- ============================================================
+         SEGURANÇA (camada de reforço via meta).
+         O ideal é enviar estes cabeçalhos pelo servidor também:
+         veja .htaccess (Apache/Hostinger), _headers (Netlify/Cloudflare)
+         e vercel.json. "frame-ancestors" só funciona via cabeçalho.
+         ============================================================ -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://cloud.umami.is; style-src 'self'; font-src 'self'; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com; connect-src 'self' https://cloud.umami.is https://api-gateway.umami.dev; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- ============================================================
+         SEO LOCAL
+         TROCAR "https://www.drlucaslima.com.br/" pelo domínio real
+         em todo o projeto (index.html, robots.txt, sitemap.xml).
+         ============================================================ -->
+    <title>Dentista em Araraquara | Dr. Lucas H. Lima – Prótese sobre Implante e Reabilitação Oral</title>
+    <meta name="description"
+        content="Dr. Lucas H. Lima, cirurgião-dentista em Araraquara-SP (CROSP 148574). Prótese sobre implante, prótese fixa e reabilitação oral. Agende sua avaliação pelo WhatsApp.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://www.drlucaslima.com.br/">
+    <meta name="author" content="Dr. Lucas H. Lima">
+    <meta name="theme-color" content="#0b4f9c">
+    <meta name="format-detection" content="telephone=yes">
+
+    <!-- Geolocalização (reforço para buscas locais) -->
+    <meta name="geo.region" content="BR-SP">
+    <meta name="geo.placename" content="Araraquara">
+    <meta name="geo.position" content="-21.799014;-48.175048">
+    <meta name="ICBM" content="-21.799014, -48.175048">
+
+    <!-- Open Graph / prévia no WhatsApp, Instagram e Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Dr. Lucas H. Lima – Dentista em Araraquara">
+    <meta property="og:title" content="Dentista em Araraquara | Dr. Lucas H. Lima">
+    <meta property="og:description"
+        content="Prótese sobre implante, prótese fixa e reabilitação oral em Araraquara-SP. Agende sua avaliação.">
+    <meta property="og:url" content="https://www.drlucaslima.com.br/">
+    <!-- TROCAR: imagem 1200x630 do Dr. Lucas em /img/og-image.jpg -->
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200&h=630&auto=format&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Consultório do Dr. Lucas H. Lima, dentista em Araraquara">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1600&auto=format&fit=crop">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!-- Dados estruturados (Google). Completar endereço/horários quando tiver. -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Dentist",
+          "@id": "https://www.drlucaslima.com.br/#consultorio",
+          "name": "Dr. Lucas H. Lima – Dentista em Araraquara",
+          "description": "Cirurgião-dentista em Araraquara-SP com atuação em prótese sobre implante, prótese fixa e reabilitação oral.",
+          "url": "https://www.drlucaslima.com.br/",
+          "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200&auto=format&fit=crop",
+          "telephone": "+55-17-99627-2778",
+          "priceRange": "$$",
+          "currenciesAccepted": "BRL",
+          "paymentAccepted": "Pix, Cartão de crédito, Cartão de débito, Dinheiro",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Padre Duarte, 824 - Centro",
+            "addressLocality": "Araraquara",
+            "addressRegion": "SP",
+            "postalCode": "14800-360",
+            "addressCountry": "BR"
+          },
+          "hasMap": "https://www.google.com/maps/search/?api=1&query=Rua+Padre+Duarte%2C+824+-+Centro%2C+Araraquara+-+SP%2C+14800-360",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -21.799014,
+            "longitude": -48.175048
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Araraquara" },
+            { "@type": "City", "name": "Américo Brasiliense" },
+            { "@type": "City", "name": "Matão" },
+            { "@type": "City", "name": "Santa Lúcia" }
+          ],
+          "founder": { "@id": "https://www.drlucaslima.com.br/#dr-lucas" },
+          "medicalSpecialty": "Dentistry",
+          "availableService": [
+            { "@type": "MedicalProcedure", "name": "Prótese sobre implante" },
+            { "@type": "MedicalProcedure", "name": "Prótese fixa" },
+            { "@type": "MedicalProcedure", "name": "Reabilitação oral" },
+            { "@type": "MedicalProcedure", "name": "Avaliação odontológica" }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/drlucashlima/",
+            "https://linktr.ee/dr.lucashlima"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.drlucaslima.com.br/#dr-lucas",
+          "name": "Lucas H. Lima",
+          "honorificPrefix": "Dr.",
+          "jobTitle": "Cirurgião-Dentista",
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "CROSP",
+            "value": "148574"
+          },
+          "image": "https://www.drlucaslima.com.br/img/dr-lucas-lima-dentista-araraquara.jpg",
+          "worksFor": { "@id": "https://www.drlucaslima.com.br/#consultorio" },
+          "sameAs": ["https://www.instagram.com/drlucashlima/"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.drlucaslima.com.br/#site",
+          "url": "https://www.drlucaslima.com.br/",
+          "name": "Dr. Lucas H. Lima – Dentista em Araraquara",
+          "inLanguage": "pt-BR"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Onde fica o consultório do Dr. Lucas em Araraquara?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O consultório fica na Rua Padre Duarte, 824, no Centro de Araraquara-SP (CEP 14800-360). O atendimento é de segunda a sexta, das 9h às 18h, e o agendamento é feito pelo WhatsApp (17) 99627-2778." }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é prótese sobre implante?",
+              "acceptedAnswer": { "@type": "Answer", "text": "É a prótese (coroa, ponte ou protocolo) fixada sobre implantes dentários, que substitui dentes perdidos devolvendo mastigação, fala e estética, sem depender dos dentes vizinhos." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quanto custa um implante ou uma prótese em Araraquara?",
+              "acceptedAnswer": { "@type": "Answer", "text": "O valor depende de cada caso: número de dentes, necessidade de enxerto, tipo de prótese e materiais. Por isso o primeiro passo é uma avaliação, em que o plano de tratamento e o orçamento são apresentados de forma clara." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre prótese fixa e prótese removível?",
+              "acceptedAnswer": { "@type": "Answer", "text": "A prótese fixa fica cimentada ou parafusada (sobre dentes ou implantes) e não é retirada pelo paciente. A removível pode ser tirada para higienização. A indicação é definida na avaliação." }
+            },
+            {
+              "@type": "Question",
+              "name": "Quais as formas de pagamento aceitas pelo Dr. Lucas em Araraquara?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Pix, cartão de crédito, cartão de débito e dinheiro, com parcelamento facilitado no cartão. O valor de cada tratamento é apresentado na avaliação, junto com o plano completo." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como é a primeira consulta com o dentista Dr. Lucas em Araraquara?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Você agenda pelo WhatsApp, vem ao consultório para a avaliação (conversa, exame clínico e, se precisar, exames de imagem) e recebe o plano de tratamento com prazos, orçamento e formas de pagamento. Sem compromisso: você só começa se fizer sentido para você." }
+            },
+            {
+              "@type": "Question",
+              "name": "Como agendar uma consulta com o Dr. Lucas?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Pelo WhatsApp (17) 99627-2778 ou pelo botão Agendar avaliação deste site. O atendimento é de segunda a sexta, das 9h às 18h, com hora marcada, na Rua Padre Duarte, 824 - Centro, Araraquara-SP." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="header" id="main-header">
+        <a href="#inicio" class="logo" aria-label="Dr. Lucas Lima – início">
+            <span class="logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 3.5c-1.5-1-3.2-1.5-4.8-1.5C4.3 2 2.5 4.3 2.5 7.4c0 2.3.8 4.2 1.5 6 .6 1.6 1 3.3 1.2 5.1.2 1.9.9 3.5 2.3 3.5 1.6 0 2-2 2.4-4 .3-1.4.8-2.8 2.1-2.8s1.8 1.4 2.1 2.8c.4 2 .8 4 2.4 4 1.4 0 2.1-1.6 2.3-3.5.2-1.8.6-3.5 1.2-5.1.7-1.8 1.5-3.7 1.5-6C21.5 4.3 19.7 2 16.8 2c-1.6 0-3.3.5-4.8 1.5z" />
+                </svg>
+            </span>
+            <span class="typing-effect">DR. LUCAS <span>LIMA</span></span>
+        </a>
+
+        <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="nav-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="nav-menu" aria-label="Menu principal">
+            <a href="#sobre">O Dentista</a>
+            <a href="#tratamentos">Tratamentos</a>
+            <a href="#proteses" class="nav-highlight">Próteses</a>
+            <a href="#casos">Casos</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#duvidas">Dúvidas</a>
+            <a href="#contato">Contato</a>
+            <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+                target="_blank" rel="noopener noreferrer" class="btn-solid mobile-only-btn">Agendar avaliação</a>
+        </nav>
+
+        <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+            target="_blank" rel="noopener noreferrer" class="btn-outline desktop-btn">Agendar avaliação</a>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- HERO -->
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <p class="eyebrow">Cirurgião-Dentista · CROSP 148574</p>
+                <h1 id="hero-title">Dentista em Araraquara para devolver a segurança do seu sorriso.</h1>
+                <p class="hero-text">Prótese sobre implante, prótese fixa e reabilitação oral com planejamento
+                    individual, atendimento humano e hora marcada, aqui em <strong>Araraquara-SP</strong>.</p>
+
+                <div class="hero-actions">
+                    <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+                        target="_blank" rel="noopener noreferrer" class="btn-solid btn-pulse">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                            <use href="#i-whatsapp" />
+                        </svg>
+                        Agendar pelo WhatsApp
+                    </a>
+                    <a href="#tratamentos" class="btn-ghost">Ver tratamentos</a>
+                </div>
+
+                <ul class="hero-badges" aria-label="Diferenciais">
+                    <li>Planejamento individual</li>
+                    <li>Atendimento com hora marcada</li>
+                    <li>Araraquara e região</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="section-padding section-light" aria-labelledby="sobre-title">
+            <div class="container split-layout reveal">
+                <div class="image-content">
+                    <img src="img/dr-lucas-lima-dentista-araraquara-800.webp"
+                        srcset="img/dr-lucas-lima-dentista-araraquara-480.webp 480w, img/dr-lucas-lima-dentista-araraquara-800.webp 800w"
+                        sizes="(min-width: 993px) 480px, 90vw"
+                        alt="Dr. Lucas H. Lima, cirurgião-dentista em Araraquara-SP, sorrindo no consultório LH Odontologia"
+                        width="800" height="1066" loading="lazy" decoding="async">
+                </div>
+                <div class="text-content">
+                    <p class="eyebrow">O Dentista</p>
+                    <h2 id="sobre-title" class="section-title">Dr. Lucas H. Lima</h2>
+                    <p class="cro">Cirurgião-Dentista · CROSP 148574</p>
+                    <p>Dentista em Araraquara com atuação em <strong>reabilitação oral</strong>, <strong>prótese sobre
+                            implante</strong> e <strong>prótese fixa</strong>. Cada caso começa por uma avaliação
+                        cuidadosa e um planejamento feito sob medida para a sua boca, a sua rotina e o seu objetivo.</p>
+                    <p>A proposta é simples: explicar cada etapa com clareza, respeitar o seu tempo e entregar um
+                        tratamento que devolva função, conforto e confiança para sorrir.</p>
+                    <ul class="check-list">
+                        <li>Explicação clara de cada etapa e do orçamento</li>
+                        <li>Materiais de qualidade e protocolos de biossegurança</li>
+                        <li>Acompanhamento após o tratamento</li>
+                    </ul>
+                    <a href="https://www.instagram.com/drlucashlima/" target="_blank" rel="noopener noreferrer me"
+                        class="text-link">Acompanhe no Instagram @drlucashlima →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRIMEIRA CONSULTA -->
+        <section id="primeira-consulta" class="section-padding section-tint" aria-labelledby="consulta-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Primeira consulta</p>
+                    <h2 id="consulta-title" class="section-title">Como funciona a sua primeira consulta</h2>
+                    <p class="section-sub">Simples, sem pressa e sem surpresa. Você entende tudo antes de decidir.</p>
+                </div>
+
+                <ol class="journey">
+                    <li class="journey-step reveal">
+                        <span class="journey-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                                <use href="#i-whatsapp" />
+                            </svg>
+                        </span>
+                        <h3>Chame no WhatsApp</h3>
+                        <p>Escolha o melhor dia e horário. Atendimento de segunda a sexta, das 9h às 18h.</p>
+                    </li>
+                    <li class="journey-step reveal">
+                        <span class="journey-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 21s-7-4.5-7-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 16.5 12 21 12 21z" />
+                                <path d="M9.5 11.5h5M12 9v5" />
+                            </svg>
+                        </span>
+                        <h3>Avaliação no consultório</h3>
+                        <p>Conversa sobre o que te incomoda, exame clínico e, se precisar, exames de imagem.</p>
+                    </li>
+                    <li class="journey-step reveal">
+                        <span class="journey-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="3" width="14" height="18" rx="2" />
+                                <path d="M9 8h6M9 12h6M9 16h3" />
+                            </svg>
+                        </span>
+                        <h3>Plano e orçamento</h3>
+                        <p>O Dr. Lucas explica as opções, os prazos e as formas de pagamento antes de começar.</p>
+                    </li>
+                </ol>
+
+                <div class="journey-cta reveal">
+                    <p class="journey-note"><strong>Sem compromisso:</strong> você só começa o tratamento se fizer
+                        sentido para você.</p>
+                    <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+                        target="_blank" rel="noopener noreferrer" class="btn-solid btn-pulse">Agendar minha
+                        avaliação</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRATAMENTOS -->
+        <section id="tratamentos" class="section-padding section-light" aria-labelledby="trat-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Tratamentos</p>
+                    <h2 id="trat-title" class="section-title">Tratamentos odontológicos em Araraquara</h2>
+                    <p class="section-sub">Soluções para quem perdeu dentes, tem dentes muito desgastados ou quer
+                        voltar a mastigar e sorrir com segurança.</p>
+                </div>
+                <div class="grid-layout">
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7 3h10l-1 6H8z" />
+                                <path d="M12 9v12M9 13h6M9.5 17h5" />
+                            </svg>
+                        </div>
+                        <h3>Prótese sobre implante</h3>
+                        <p>Coroas, pontes e protocolos fixados sobre implantes para repor um ou vários dentes, com
+                            firmeza para mastigar e aparência natural.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 8c0-2 1.5-4 4-4 1.5 0 2.5.7 4 .7S14.5 4 16 4c2.5 0 4 2 4 4 0 4-2 6-2.5 12H15l-1.5-5h-3L9 20H6.5C6 14 4 12 4 8z" />
+                            </svg>
+                        </div>
+                        <h3>Prótese fixa</h3>
+                        <p>Coroas e pontes fixas em porcelana ou cerâmica para dentes muito destruídos, escurecidos ou
+                            ausentes, sem precisar retirar da boca.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 21s-7-4.5-7-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 16.5 12 21 12 21z" />
+                            </svg>
+                        </div>
+                        <h3>Reabilitação oral</h3>
+                        <p>Planejamento completo para recuperar a função mastigatória, a mordida e a estética quando há
+                            vários dentes comprometidos.</p>
+                    </article>
+                    <article class="card reveal">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="m20 20-3.5-3.5" />
+                            </svg>
+                        </div>
+                        <h3>Avaliação e planejamento</h3>
+                        <p>Consulta para entender o seu caso, tirar dúvidas e apresentar as opções de tratamento e o
+                            orçamento de forma transparente.</p>
+                    </article>
+                </div>
+
+                <nav class="treat-links reveal" aria-label="Páginas de tratamento">
+                    <span>Saiba mais sobre cada tratamento:</span>
+                    <a href="protese-sobre-implante-araraquara/">Prótese sobre implante</a>
+                    <a href="coroa-de-porcelana-araraquara/">Coroa em porcelana</a>
+                    <a href="onlay-em-porcelana-araraquara/">Onlay em porcelana</a>
+                    <a href="limpeza-dental-araraquara/">Limpeza dental</a>
+                    <a href="tratamento-mancha-branca-araraquara/">Mancha branca</a>
+                </nav>
+            </div>
+        </section>
+
+        <!-- PRÓTESES (destaque com página própria) -->
+        <section id="proteses" class="section-padding section-feature" aria-labelledby="proteses-title">
+            <div class="container feature-grid">
+                <div class="feature-media reveal">
+                    <img src="img/casos/protocolo-superior-implante-600.webp"
+                        srcset="img/casos/protocolo-superior-implante-600.webp 600w, img/casos/protocolo-superior-implante-800.webp 800w, img/casos/protocolo-superior-implante-1080.webp 1080w"
+                        sizes="(min-width: 993px) 440px, 90vw" width="600" height="750" loading="lazy" decoding="async"
+                        alt="Antes e depois de protocolo superior sobre implantes, caso do Dr. Lucas H. Lima em Araraquara">
+                    <span class="feature-tag">Caso real</span>
+                </div>
+
+                <div class="feature-text reveal">
+                    <p class="eyebrow eyebrow-light">Próteses</p>
+                    <h2 id="proteses-title" class="section-title">Prótese sobre implante em Araraquara</h2>
+                    <p class="feature-lead">Para quem perdeu um ou vários dentes e quer voltar a mastigar, falar e
+                        sorrir com <strong>dentes fixos</strong>, sem depender dos dentes vizinhos.</p>
+
+                    <ul class="feature-list">
+                        <li><strong>Coroa sobre implante</strong><span>repõe um dente</span></li>
+                        <li><strong>Ponte sobre implantes</strong><span>repõe vários dentes seguidos</span></li>
+                        <li><strong>Protocolo</strong><span>arcada inteira fixa, de cima ou de baixo</span></li>
+                    </ul>
+
+                    <ol class="feature-steps" aria-label="Etapas do tratamento">
+                        <li>Avaliação</li>
+                        <li>Planejamento</li>
+                        <li>Implantes</li>
+                        <li>Prótese definitiva</li>
+                    </ol>
+
+                    <div class="feature-actions">
+                        <a href="protese-sobre-implante-araraquara/" class="btn-solid btn-on-dark">Ver tudo sobre
+                            prótese sobre implante</a>
+                        <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20pr%C3%B3tese%20sobre%20implante."
+                            target="_blank" rel="noopener noreferrer" class="btn-outline btn-on-dark">Tirar dúvidas no
+                            WhatsApp</a>
+                    </div>
+
+                    <div class="feature-related">
+                        <span>Veja também:</span>
+                        <a href="coroa-de-porcelana-araraquara/">Coroa em porcelana</a>
+                        <a href="onlay-em-porcelana-araraquara/">Onlay em porcelana</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASOS REALIZADOS (antes e depois) -->
+        <section id="casos" class="section-padding section-light" aria-labelledby="casos-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Antes e depois</p>
+                    <h2 id="casos-title" class="section-title">Casos realizados em Araraquara</h2>
+                    <p class="section-sub">Alguns tratamentos feitos pelo Dr. Lucas no consultório LH Odontologia.
+                        Toque na imagem para ampliar.</p>
+                </div>
+
+                <p class="swipe-hint" aria-hidden="true">Arraste para o lado →</p>
+                <ul class="cases-grid" id="cases-grid">
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/protocolo-superior-implante-1080.webp"
+                            data-title="Protocolo superior sobre implantes" data-desc="Reabilitação da arcada superior com prótese fixa parafusada sobre implantes."
+                            data-insta="https://www.instagram.com/p/DJXeLW_RmCo/" aria-label="Ampliar caso: Protocolo superior sobre implantes">
+                            <img src="img/casos/protocolo-superior-implante-600.webp"
+                                srcset="img/casos/protocolo-superior-implante-600.webp 600w, img/casos/protocolo-superior-implante-800.webp 800w, img/casos/protocolo-superior-implante-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: protocolo superior sobre implantes feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Prótese sobre implante</span>
+                            <h3>Protocolo superior sobre implantes</h3>
+                            <p>Reabilitação da arcada superior com prótese fixa parafusada sobre implantes.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/coroa-total-emax-1080.webp"
+                            data-title="Coroa total em porcelana E.max" data-desc="Coroa em porcelana de alta resistência que devolve forma, cor e função ao dente."
+                            data-insta="https://www.instagram.com/p/DJXeV_ERg7U/" aria-label="Ampliar caso: Coroa total em porcelana E.max">
+                            <img src="img/casos/coroa-total-emax-600.webp"
+                                srcset="img/casos/coroa-total-emax-600.webp 600w, img/casos/coroa-total-emax-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: coroa total em porcelana e.max feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Prótese fixa</span>
+                            <h3>Coroa total em porcelana E.max</h3>
+                            <p>Coroa em porcelana de alta resistência que devolve forma, cor e função ao dente.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/coroa-total-porcelana-1080.webp"
+                            data-title="Coroa total em porcelana" data-desc="Dente muito destruído recuperado com coroa em porcelana de aparência natural."
+                            data-insta="https://www.instagram.com/p/DIOjLHqRVPK/" aria-label="Ampliar caso: Coroa total em porcelana">
+                            <img src="img/casos/coroa-total-porcelana-600.webp"
+                                srcset="img/casos/coroa-total-porcelana-600.webp 600w, img/casos/coroa-total-porcelana-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: coroa total em porcelana feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Prótese fixa</span>
+                            <h3>Coroa total em porcelana</h3>
+                            <p>Dente muito destruído recuperado com coroa em porcelana de aparência natural.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/coroa-total-1080.webp"
+                            data-title="Coroa total sobre raiz" data-desc="Quando o dente perde a coroa por completo, uma raiz saudável permite fazer uma nova coroa."
+                            data-insta="https://www.instagram.com/p/DHnvqtkxyLD/" aria-label="Ampliar caso: Coroa total sobre raiz">
+                            <img src="img/casos/coroa-total-600.webp"
+                                srcset="img/casos/coroa-total-600.webp 600w, img/casos/coroa-total-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: coroa total sobre raiz feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Prótese fixa</span>
+                            <h3>Coroa total sobre raiz</h3>
+                            <p>Quando o dente perde a coroa por completo, uma raiz saudável permite fazer uma nova coroa.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/onlay-porcelana-1080.webp"
+                            data-title="Onlay em porcelana" data-desc="Indicado quando o dente perde grande parte da estrutura, preservando o máximo do dente natural."
+                            data-insta="https://www.instagram.com/p/DHteUSSxcYv/" aria-label="Ampliar caso: Onlay em porcelana">
+                            <img src="img/casos/onlay-porcelana-600.webp"
+                                srcset="img/casos/onlay-porcelana-600.webp 600w, img/casos/onlay-porcelana-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: onlay em porcelana feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Restauração em porcelana</span>
+                            <h3>Onlay em porcelana</h3>
+                            <p>Indicado quando o dente perde grande parte da estrutura, preservando o máximo do dente natural.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/onlay-porcelana-2-1080.webp"
+                            data-title="Onlay em porcelana (caso 2)" data-desc="Restauração indireta em porcelana, mais resistente e durável que uma restauração comum."
+                            data-insta="https://www.instagram.com/p/DIOjhbAxval/" aria-label="Ampliar caso: Onlay em porcelana (caso 2)">
+                            <img src="img/casos/onlay-porcelana-2-600.webp"
+                                srcset="img/casos/onlay-porcelana-2-600.webp 600w, img/casos/onlay-porcelana-2-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: onlay em porcelana (caso 2) feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Restauração em porcelana</span>
+                            <h3>Onlay em porcelana (caso 2)</h3>
+                            <p>Restauração indireta em porcelana, mais resistente e durável que uma restauração comum.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/fluorose-mancha-branca-1080.webp"
+                            data-title="Fluorose (mancha branca)" data-desc="Tratamento das manchas brancas causadas por excesso de flúor durante a formação dos dentes."
+                            data-insta="https://www.instagram.com/p/DHlmN1DR7ap/" aria-label="Ampliar caso: Fluorose (mancha branca)">
+                            <img src="img/casos/fluorose-mancha-branca-600.webp"
+                                srcset="img/casos/fluorose-mancha-branca-600.webp 600w, img/casos/fluorose-mancha-branca-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: fluorose (mancha branca) feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Estética</span>
+                            <h3>Fluorose (mancha branca)</h3>
+                            <p>Tratamento das manchas brancas causadas por excesso de flúor durante a formação dos dentes.</p>
+                        </div>
+                    </li>
+                    <li class="case-card reveal">
+                        <button type="button" class="case-open" data-full="img/casos/limpeza-raspagem-1080.webp"
+                            data-title="Limpeza e raspagem" data-desc="Remoção de tártaro e placa. O ideal é avaliação e limpeza a cada 6 meses."
+                            data-insta="https://www.instagram.com/p/DIOjUlUx2ce/" aria-label="Ampliar caso: Limpeza e raspagem">
+                            <img src="img/casos/limpeza-raspagem-600.webp"
+                                srcset="img/casos/limpeza-raspagem-600.webp 600w, img/casos/limpeza-raspagem-1080.webp 1080w"
+                                sizes="(min-width: 993px) 280px, 78vw" width="600" height="750" loading="lazy"
+                                decoding="async" alt="Antes e depois: limpeza e raspagem feito pelo Dr. Lucas H. Lima, dentista em Araraquara">
+                            <span class="case-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2M11 8.5v5M8.5 11h5"/></svg>Ampliar</span>
+                        </button>
+                        <div class="case-body">
+                            <span class="case-tag">Prevenção</span>
+                            <h3>Limpeza e raspagem</h3>
+                            <p>Remoção de tártaro e placa. O ideal é avaliação e limpeza a cada 6 meses.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- TROCAR/CONFIRMAR: só manter "com autorização" se o Dr. Lucas tiver o termo assinado dos pacientes -->
+                <p class="cases-note">Casos reais realizados pelo Dr. Lucas H. Lima · CROSP 148574. Imagens publicadas com
+                    autorização dos pacientes. Os resultados variam de acordo com cada caso e dependem de avaliação
+                    clínica.</p>
+
+                <div class="section-actions reveal">
+                    <a href="https://www.instagram.com/drlucashlima/" target="_blank" rel="noopener noreferrer"
+                        class="btn-outline">Ver mais casos no Instagram</a>
+                </div>
+            </div>
+
+            <!-- Visualizador ampliado -->
+            <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-dialog-title">
+                <div class="case-dialog-inner">
+                    <button type="button" class="case-close" id="case-close" aria-label="Fechar"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+                    <img id="case-dialog-img" src="" alt="" width="1080" height="1350">
+                    <div class="case-dialog-text">
+                        <h3 id="case-dialog-title"></h3>
+                        <p id="case-dialog-desc"></p>
+                        <a id="case-dialog-insta" href="https://www.instagram.com/drlucashlima/" target="_blank"
+                            rel="noopener noreferrer" class="text-link">Ver post no Instagram →</a>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+
+
+        <!-- AVALIAÇÕES DO GOOGLE -->
+        <section id="avaliacoes" class="section-padding section-reviews" aria-labelledby="aval-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Avaliações</p>
+                    <h2 id="aval-title" class="section-title">O que os pacientes dizem no Google</h2>
+                    <div class="rating-summary">
+                        <span class="g-logo" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" width="28" height="28">
+                                <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.2-.1-2.4-.4-3.5z" />
+                                <path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z" />
+                                <path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z" />
+                                <path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.2-.1-2.4-.4-3.5z" />
+                            </svg>
+                        </span>
+                        <span class="stars" aria-hidden="true">★★★★★</span>
+                        <span>Avaliações de pacientes no Google</span>
+                    </div>
+                    <!-- TROCAR: remover este aviso quando as avaliações reais forem coladas abaixo -->
+                    <p class="demo-note">Avaliações ilustrativas: serão substituídas pelas avaliações reais do perfil
+                        no Google.</p>
+                </div>
+
+                <!-- Cada avaliação é HTML puro (o Google consegue ler o texto).
+                     Copiar nome, nota e texto do Google Meu Negócio. -->
+                <div class="reviews-grid">
+                    <figure class="review-card reveal">
+                        <div class="review-head">
+                            <span class="avatar" aria-hidden="true">P</span>
+                            <div>
+                                <figcaption class="review-name">Nome do paciente</figcaption>
+                                <span class="review-meta">Avaliação no Google</span>
+                            </div>
+                        </div>
+                        <p class="stars" aria-label="Nota 5 de 5">★★★★★</p>
+                        <blockquote>
+                            <p>Texto da avaliação real do Google. Ex.: atendimento atencioso, explicou cada etapa da
+                                prótese e o resultado ficou natural.</p>
+                        </blockquote>
+                    </figure>
+                    <figure class="review-card reveal">
+                        <div class="review-head">
+                            <span class="avatar" aria-hidden="true">P</span>
+                            <div>
+                                <figcaption class="review-name">Nome do paciente</figcaption>
+                                <span class="review-meta">Avaliação no Google</span>
+                            </div>
+                        </div>
+                        <p class="stars" aria-label="Nota 5 de 5">★★★★★</p>
+                        <blockquote>
+                            <p>Texto da avaliação real do Google. Ex.: pontualidade, consultório limpo e muito cuidado
+                                durante o tratamento.</p>
+                        </blockquote>
+                    </figure>
+                    <figure class="review-card reveal">
+                        <div class="review-head">
+                            <span class="avatar" aria-hidden="true">P</span>
+                            <div>
+                                <figcaption class="review-name">Nome do paciente</figcaption>
+                                <span class="review-meta">Avaliação no Google</span>
+                            </div>
+                        </div>
+                        <p class="stars" aria-label="Nota 5 de 5">★★★★★</p>
+                        <blockquote>
+                            <p>Texto da avaliação real do Google. Ex.: voltei a mastigar com segurança depois da
+                                prótese sobre implante.</p>
+                        </blockquote>
+                    </figure>
+                </div>
+
+                <div class="section-actions reveal">
+                    <!-- TROCAR os dois links pelo perfil do Google Meu Negócio do Dr. Lucas -->
+                    <a href="https://www.google.com/search?q=Dr.+Lucas+H+Lima+dentista+Araraquara" target="_blank"
+                        rel="noopener noreferrer" class="btn-outline">Ver todas no Google</a>
+                    <a href="https://www.google.com/search?q=Dr.+Lucas+H+Lima+dentista+Araraquara" target="_blank"
+                        rel="noopener noreferrer" class="btn-solid">Deixar minha avaliação</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAS DE PAGAMENTO (sem preços, conforme o CFO) -->
+        <section id="pagamento" class="section-padding section-light" aria-labelledby="pag-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Formas de pagamento</p>
+                    <h2 id="pag-title" class="section-title">Facilidade para cuidar do seu sorriso</h2>
+                    <p class="section-sub">O valor de cada tratamento é apresentado na avaliação, junto com o plano
+                        completo. Você escolhe a forma de pagamento que fica melhor para você.</p>
+                </div>
+
+                <ul class="pay-grid">
+                    <li class="pay-card reveal">
+                        <span class="pay-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linejoin="round">
+                                <path d="M12 2.8 21.2 12 12 21.2 2.8 12z" />
+                                <path d="M8.2 12 12 8.2 15.8 12 12 15.8z" />
+                            </svg>
+                        </span>
+                        <h3>Pix</h3>
+                        <p>Pagamento rápido e confirmado na hora.</p>
+                    </li>
+                    <li class="pay-card pay-card-featured reveal">
+                        <span class="pay-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
+                                <path d="M2.5 9.5h19M6.5 15h4" />
+                            </svg>
+                        </span>
+                        <h3>Cartão de crédito</h3>
+                        <p>Com <strong>parcelamento facilitado</strong> para os tratamentos.</p>
+                        <span class="pay-badge">Parcela no cartão</span>
+                    </li>
+                    <li class="pay-card reveal">
+                        <span class="pay-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
+                                <path d="M2.5 9.5h19" />
+                                <circle cx="16.5" cy="15" r="1.6" />
+                            </svg>
+                        </span>
+                        <h3>Cartão de débito</h3>
+                        <p>Pagamento à vista direto na maquininha.</p>
+                    </li>
+                    <li class="pay-card reveal">
+                        <span class="pay-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor"
+                                stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2.5" y="6" width="19" height="12" rx="2" />
+                                <circle cx="12" cy="12" r="2.6" />
+                                <path d="M6 9.5v5M18 9.5v5" />
+                            </svg>
+                        </span>
+                        <h3>Dinheiro</h3>
+                        <p>Pagamento em espécie no consultório.</p>
+                    </li>
+                </ul>
+
+                <div class="section-actions reveal">
+                    <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20as%20formas%20de%20pagamento."
+                        target="_blank" rel="noopener noreferrer" class="btn-solid">Tirar dúvidas pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DÚVIDAS (FAQ) -->
+        <section id="duvidas" class="section-padding section-tint" aria-labelledby="faq-title">
+            <div class="container container-narrow">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Dúvidas frequentes</p>
+                    <h2 id="faq-title" class="section-title">Perguntas sobre o dentista em Araraquara</h2>
+                </div>
+                <div class="faq">
+                    <details class="reveal">
+                        <summary>Onde fica o consultório do Dr. Lucas em Araraquara?</summary>
+                        <p>O consultório fica na <strong>Rua Padre Duarte, 824, no Centro de Araraquara-SP</strong> (CEP
+                            14800-360). O atendimento é de segunda a sexta, das 9h às 18h, e o agendamento é feito pelo
+                            WhatsApp (17) 99627-2778. Veja a rota na seção <a href="#contato">Contato</a>.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>O que é prótese sobre implante?</summary>
+                        <p>É a prótese (coroa, ponte ou protocolo) fixada sobre implantes dentários, que substitui
+                            dentes perdidos devolvendo mastigação, fala e estética, sem depender dos dentes vizinhos.
+                        </p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Quanto custa um implante ou uma prótese em Araraquara?</summary>
+                        <p>O valor depende de cada caso: número de dentes, necessidade de enxerto, tipo de prótese e
+                            materiais. Por isso o primeiro passo é uma avaliação, em que o plano de tratamento e o
+                            orçamento são apresentados de forma clara.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Qual a diferença entre prótese fixa e prótese removível?</summary>
+                        <p>A prótese fixa fica cimentada ou parafusada (sobre dentes ou implantes) e não é retirada pelo
+                            paciente. A removível pode ser tirada para higienização. A indicação é definida na
+                            avaliação.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Quais as formas de pagamento?</summary>
+                        <p>Pix, cartão de crédito, cartão de débito e dinheiro, com <strong>parcelamento facilitado no
+                            cartão</strong>. O valor de cada tratamento é apresentado na avaliação, junto com o plano
+                            completo. Veja em <a href="#pagamento">Formas de pagamento</a>.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Como é a primeira consulta?</summary>
+                        <p>Você agenda pelo WhatsApp, vem ao consultório para a avaliação (conversa, exame clínico e,
+                            se precisar, exames de imagem) e recebe o plano de tratamento com prazos, orçamento e formas
+                            de pagamento. <strong>Sem compromisso</strong>: você só começa se fizer sentido para você.</p>
+                    </details>
+                    <details class="reveal">
+                        <summary>Como agendar uma consulta com o Dr. Lucas?</summary>
+                        <p>Pelo WhatsApp (17) 99627-2778 ou pelo botão "Agendar avaliação" deste site. O atendimento é
+                            de segunda a sexta, das 9h às 18h, com hora marcada.</p>
+                    </details>
+                </div>
+
+                <div class="faq-more reveal">
+                    <h3>Quer se aprofundar? Leia as dúvidas de pacientes</h3>
+                    <ul class="article-list">
+                        <li>
+                            <a href="duvidas/protese-fixa-protocolo-ou-dentadura/" class="article-card">
+                                <img src="img/casos/protocolo-superior-implante-600.webp" width="600" height="750" loading="lazy" decoding="async" alt="">
+                                <span class="article-card-body">
+                                    <span class="article-card-meta">4 min de leitura</span>
+                                    <strong>Prótese fixa, protocolo ou dentadura: qual a diferença?</strong>
+                                    <span class="article-card-cta">Ler artigo</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="duvidas/quanto-tempo-dura-coroa-e-protese-sobre-implante/" class="article-card">
+                                <img src="img/casos/coroa-total-emax-600.webp" width="600" height="750" loading="lazy" decoding="async" alt="">
+                                <span class="article-card-body">
+                                    <span class="article-card-meta">3 min de leitura</span>
+                                    <strong>Quanto tempo dura uma coroa ou prótese sobre implante?</strong>
+                                    <span class="article-card-cta">Ler artigo</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="duvidas/onlay-ou-restauracao-quando-vale-a-pena/" class="article-card">
+                                <img src="img/casos/onlay-porcelana-600.webp" width="600" height="750" loading="lazy" decoding="async" alt="">
+                                <span class="article-card-body">
+                                    <span class="article-card-meta">3 min de leitura</span>
+                                    <strong>Onlay ou restauração comum: quando vale a pena?</strong>
+                                    <span class="article-card-cta">Ler artigo</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="section-actions">
+                        <a href="duvidas/" class="btn-outline">Ver todas as dúvidas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section-padding section-blue" aria-labelledby="contato-title">
+            <div class="container">
+                <div class="contact-header reveal">
+                    <p class="eyebrow eyebrow-light">Contato</p>
+                    <h2 id="contato-title" class="section-title">Agende sua avaliação em Araraquara</h2>
+                    <p>Fale direto com o consultório pelo WhatsApp. Atendimento de segunda a sexta, das 9h às 18h, no
+                        Centro de Araraquara.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <address class="contact-info reveal">
+                        <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+                            target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22"
+                                    height="22" fill="currentColor">
+                                    <use href="#i-whatsapp" />
+                                </svg></span>
+                            <span><strong>WhatsApp</strong>(17) 99627-2778</span>
+                        </a>
+
+                        <a href="tel:+5517996272778" class="contact-item">
+                            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22"
+                                    height="22" fill="currentColor">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg></span>
+                            <span><strong>Telefone</strong>(17) 99627-2778</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/drlucashlima/" target="_blank" rel="noopener noreferrer me"
+                            class="contact-item">
+                            <span class="contact-icon insta-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22"
+                                    height="22" fill="currentColor">
+                                    <use href="#i-instagram" />
+                                </svg></span>
+                            <span><strong>Instagram</strong>@drlucashlima</span>
+                        </a>
+
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Padre+Duarte%2C+824+-+Centro%2C+Araraquara+-+SP%2C+14800-360"
+                            target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22"
+                                    height="22" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg></span>
+                            <span><strong>Endereço · Como chegar</strong>Rua Padre Duarte, 824 - Centro<br>Araraquara - SP, 14800-360</span>
+                        </a>
+
+                        <div class="contact-item contact-static">
+                            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22"
+                                    height="22" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M12 7v5l3 2" />
+                                </svg></span>
+                            <span><strong>Horário de atendimento</strong>
+                                <span class="hours">
+                                    <span><abbr title="Segunda a sexta">Seg. a sex.</abbr> <b>09:00 – 18:00</b></span>
+                                    <span><abbr title="Sábado e domingo">Sáb. e dom.</abbr> <b>Fechado</b></span>
+                                </span>
+                            </span>
+                        </div>
+                    </address>
+
+                    <!-- Mapa já visível; "lazy" faz ele carregar só quando o visitante chega no Contato -->
+                    <div class="contact-map reveal" id="map-box">
+                        <iframe
+                            src="https://www.google.com/maps?q=Rua+Padre+Duarte%2C+824+-+Centro%2C+Araraquara+-+SP%2C+14800-360&output=embed"
+                            title="Mapa do consultório do Dr. Lucas H. Lima – Rua Padre Duarte, 824, Centro, Araraquara-SP"
+                            loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <a class="map-route"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Rua+Padre+Duarte%2C+824+-+Centro%2C+Araraquara+-+SP%2C+14800-360"
+                            target="_blank" rel="noopener noreferrer">Traçar rota</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="footer-brand">DR. LUCAS <span>LIMA</span></p>
+                <p>Cirurgião-Dentista em Araraquara-SP<br>Responsável técnico: Dr. Lucas H. Lima · CROSP 148574</p>
+                <p class="footer-nap">Rua Padre Duarte, 824 - Centro, Araraquara - SP, 14800-360<br>
+                    Seg. a sex., 9h às 18h · WhatsApp <a href="tel:+5517996272778">(17) 99627-2778</a></p>
+            </div>
+            <nav aria-label="Links do rodapé" class="footer-links">
+                <a href="#sobre">O Dentista</a>
+                <a href="#tratamentos">Tratamentos</a>
+                <a href="#casos">Casos</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#pagamento">Pagamento</a>
+                <a href="duvidas/">Dúvidas de pacientes</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <nav aria-label="Tratamentos" class="footer-links footer-treatments">
+                <span>Tratamentos:</span>
+                <a href="protese-sobre-implante-araraquara/">Prótese sobre implante</a>
+                <a href="coroa-de-porcelana-araraquara/">Coroa em porcelana</a>
+                <a href="onlay-em-porcelana-araraquara/">Onlay em porcelana</a>
+                <a href="limpeza-dental-araraquara/">Limpeza dental</a>
+                <a href="tratamento-mancha-branca-araraquara/">Mancha branca</a>
+            </nav>
+        </div>
+        <p class="footer-copy">© <span id="year">2026</span> Dr. Lucas H. Lima. Todos os direitos reservados. Este
+            site não usa cookies próprios nem coleta dados pessoais. Mapa fornecido pelo Google Maps. <a href="politica-de-privacidade/" class="footer-privacy">Política de privacidade</a></p>
+    </footer>
+
+    <!-- BOTÕES FLUTUANTES (desktop) -->
+    <div class="floating-buttons">
+        <button id="back-to-top" class="float-btn back-top-btn" type="button" aria-label="Voltar ao topo">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                <path d="M12 4l-8 8h6v8h4v-8h6z" />
+            </svg>
+        </button>
+        <a href="https://www.instagram.com/drlucashlima/" target="_blank" rel="noopener noreferrer"
+            class="float-btn social-btn insta-btn desktop-float" aria-label="Instagram do Dr. Lucas">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                <use href="#i-instagram" />
+            </svg>
+        </a>
+        <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+            target="_blank" rel="noopener noreferrer" class="float-btn social-btn whats-btn desktop-float"
+            aria-label="Agendar pelo WhatsApp">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+                <use href="#i-whatsapp" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- BARRA FIXA (celular) -->
+    <div class="mobile-cta" aria-label="Ações rápidas">
+        <a href="tel:+5517996272778" class="mobile-cta-call">Ligar</a>
+        <a href="https://wa.me/5517996272778?text=Ol%C3%A1%2C%20Dr.%20Lucas!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."
+            target="_blank" rel="noopener noreferrer" class="mobile-cta-whats">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <use href="#i-whatsapp" />
+            </svg>
+            Agendar pelo WhatsApp
+        </a>
+    </div>
+
+    <!-- Ícones reutilizáveis -->
+    <svg width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+        </symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </symbol>
+    </svg>
+</body>
+
+</html>
